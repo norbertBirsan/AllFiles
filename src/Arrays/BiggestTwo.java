@@ -2,7 +2,7 @@
 //        Print the biggest two values. Only Unique values
 //        > The result here should be:
 //        54
-//        51
+//        51//
 package Arrays;
 
 import java.util.Arrays;
