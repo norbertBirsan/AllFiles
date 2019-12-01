@@ -18,14 +18,16 @@ public class Login {
 
         if (userInputUsernname.equals(username)) {
             System.out.println("enter password");
-            String userpassword = input.nextLine();
-            if (userpassword.equals(password)) {
-                System.out.println("welcome");
-            } else {
-                System.out.println("wrong password");
-            }
-        } else {
-            System.out.println("wrong username");
+            String userPass=input.nextLine();
+        if(userPass.equals(password)){
+            System.out.println("welcome");
+
+        }else{
+            System.out.println("wrong password");
         }
+        }else{
+            System.out.println("invalid username");
+        }
+
     }
 }

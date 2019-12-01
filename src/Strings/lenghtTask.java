@@ -8,15 +8,13 @@ public class lenghtTask {
         System.out.println("Enter a message");
             String message = input.nextLine();
 
-            if(message.isEmpty()) {
-                System.out.println("Message is empty");
-            } else if(message.length() >= 10) {
-                System.out.println("Message is good");
-            } else {
-                System.out.println("Message is too short");
-            }
-
-
+        if(message.isEmpty()){
+            System.out.println("empty");
+        }else if(message.length()<=10){
+            System.out.println("cool");
+        }else{
+            System.out.println("too long");
+        }
 
         }
     }

@@ -10,15 +10,16 @@ import java.util.Scanner;
 
 public class MoveFirstWord {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter your sentence");
-        String sentence = input.nextLine();
+        Scanner s= new Scanner(System.in);
+        System.out.println("enter sentence");
+        String sent=s.nextLine();
 
-        int space = sentence.indexOf(" ");
-        String firstWord = sentence.substring(0,space);
-        String remain = sentence.substring(space+1);
-        System.out.println(remain+ " " + firstWord);
-
+        int space=sent.indexOf(" ");
+        String firstword=sent.substring(0, space);
+        System.out.println(firstword);
+        String rest=sent.substring(space+1);
+        System.out.println(rest);
+        System.out.println(rest+" "+firstword);
 
 
 

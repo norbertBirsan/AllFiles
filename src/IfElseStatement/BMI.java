@@ -11,25 +11,28 @@ import java.util.Scanner;
 
 public class BMI {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter weight");
-        double weight = input.nextDouble();
+        Scanner s = new Scanner(System.in);
+        System.out.println("ask how heavy you are!!");
+        double pounds = s.nextDouble();
+        s.nextLine();
+        System.out.println("ask how long your neck is");
+        double height = s.nextDouble();
 
-        System.out.println("please enter height");
-        double height = input.nextDouble();
+        double bmi = pounds / (height * height);
 
-        double bmi = weight / (height * height);
+        if (!(bmi >= 30)) {
+            if (bmi == 18.5) {
+                System.out.println("you hungry?i will give you food bro");
+            } else if (bmi >= 18.5 && bmi <= 25) {
+                System.out.println("keep doing what you do but belly still there bro...do some sit ups");
 
-        if (bmi < 18.5) {
-            System.out.println("underweight");
-        } else if (bmi >= 18.5 && bmi < 25) {
-            System.out.println("Normal");
+            } else if (bmi > 25 && bmi < 30) {
+                System.out.println("brooo...i told you...go to gym man");
 
-        } else if (bmi >= 25 && bmi < 30) {
-            System.out.println("overweight");
 
-        } else{
-            System.out.println("obese");
+            } else {
+                System.out.println("go to gym habibi");
+            }
         }
     }
 }

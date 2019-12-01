@@ -6,7 +6,7 @@ public class EqualsIntro {
         String word = "Cybertek";
         String word2 = "";
 
-        System.out.println(word.equals(word2));
+        System.out.println(word.equals(word2));//false
         int len = word.length();
         System.out.println(len == word2.length());
 

@@ -1,18 +1,18 @@
-//1) User is asked to enter a sentence. Display the sentence with the first word moved to the end of the sentence.
-//        > input: “Java is a fun language”
-//        > output: “is a fun language Java”
-//        hint: you know the first space will be the end of the first word
-package Strings;
 
+package Strings;
+import java.util.*;
 public class Intro {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         String word = "java";
         String word2 = "is fun";
-        char c = word.charAt(1);
-        char d = word.charAt(2);
-        char f = word2.charAt(0);
+        char c = word.charAt(1);// a
+        char d = word.charAt(2); //v
+        char f = word2.charAt(0); //i
         System.out.println(c);
-        System.out.println("" +c + f);
+        System.out.println(""+c+f);
+
 
     }
 }
+

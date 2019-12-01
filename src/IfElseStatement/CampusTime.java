@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class CampusTime {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
         boolean check;
         System.out.println("enter time");

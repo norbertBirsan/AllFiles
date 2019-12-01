@@ -1,6 +1,6 @@
 //User will be given a string:
 //
-//        “Sender: <James Bond>. From Number: [202-123-3456]. +
+//        “Sender: <James Bond>. phone Number: [202-123-3456]. +
 //
 //        Message: {“I love programming and problem solving}”
 //
@@ -15,9 +15,7 @@
 //        “Message: actualMessage”
 
 
-        package StringTasks;
-
-
+package StringTasks;
 
 
 public class continEmail {

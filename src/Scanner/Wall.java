@@ -9,7 +9,7 @@ public class Wall {
         String color = input.nextLine();
         System.out.println("What is the legth?");
         int lenght = input.nextInt();
-        input.nextLine();
+       input.nextLine();
         System.out.println("Is it good one?");
         String answer = input.nextLine();
         System.out.println("Color: " + color);

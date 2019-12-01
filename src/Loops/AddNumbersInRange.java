@@ -9,19 +9,14 @@ import java.util.Scanner;
 
 public class AddNumbersInRange {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("enter two numbers");
-        int numOne = input.nextInt();
-        int numTwo = input.nextInt();
-        int sum = 0;
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        int n = s.nextInt();
+        String front = str.substring(0, n);
+        String back = str.substring(n+1, str.length());
 
-        for(int i = numOne; i <= numTwo; i++) {
-            sum += i;
-        }
-        System.out.println("The sum of " + numOne + " to " + numTwo + " is " + sum);
-
-
-
+        System.out.println(front+back);
+    }
 
     }
-}
+

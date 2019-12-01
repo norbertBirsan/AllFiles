@@ -14,22 +14,21 @@ import java.util.Scanner;
 
 public class Message {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        Random random = new Random();
+        Scanner s= new Scanner(System.in);
+        Random r=new Random();
+        System.out.println("enter message");
+        String message=s.nextLine();
 
-        int chance = random.nextInt(2);//10
-        System.out.println("enter messege");
-        String message = input.nextLine();
-
-        if (message.length() >= 15) {
+        if (message.length() >= 5) {
             System.out.println("sent");
-            if (random.nextBoolean()) {
-                System.out.println("Message delivered");
-            } else {
-                System.out.println("Message was not delivered");
-            }
-        } else {
-            System.out.println("not sent");
+            int random=r.nextInt(20);
+      if(random%2==1){
+          System.out.println("delivered bro");
+      }else {
+          System.out.println("not delivered bro");
+      }
+      }else{
+            System.out.println("not sent, too short");
 
 
         }

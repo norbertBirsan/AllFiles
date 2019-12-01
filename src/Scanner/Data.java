@@ -18,11 +18,11 @@ public class Data {
         System.out.println("Welcome, " + name + "!");
         System.out.println("Where are you from " + name + "?");
         String place = input.nextLine();
-        System.out.println("Wow" + ", " + place + "!");
-        System.out.println(place + " is so beautiful" + "!");
-        System.out.println("How old are you" + "," + name + "?");
+        System.out.println("Wow, " + place + "!");
+        System.out.println(place + " is so beautiful!");
+        System.out.println("How old are you?" + name + "?");
         int age = input.nextInt();
-        System.out.println(age + "?" + " That is really young");
+        System.out.println(age + "? That is really young");
 
 
 

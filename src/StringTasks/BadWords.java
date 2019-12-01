@@ -10,30 +10,34 @@
 //        changed:” and then print the original message in the next line.
 
 
-        package StringTasks;
+package StringTasks;
 
 import java.util.Scanner;
 
 public class BadWords {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.println("enter message");
-        String message = input.nextLine();
+        String message = s.nextLine();
 
-        String checked = message;
-
-        checked = checked.replace("idiot", "smart");
+       String checked = message;
+       checked = checked.replace("idiot", "smart");
         checked = checked.replace("dumb", "smart");
         checked = checked.replace("stupid", "smart");
 
-        if (message.equalsIgnoreCase(checked)) {
-            System.out.println("Your message was not changed");
-            System.out.println(message);
-        } else {
-
+        if (message.equalsIgnoreCase(checked)){
+            System.out.println("message not changed");
             System.out.println(checked);
-        }
 
+        }else{
+            System.out.println("message changed");
+            System.out.println(checked);
+
+        }
 
     }
 }
+
+
+
+

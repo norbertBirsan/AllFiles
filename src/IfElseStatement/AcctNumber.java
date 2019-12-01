@@ -1,49 +1,50 @@
 
-//User is asked to enter an account number. You will check if these account numbers are valid.(
-//        > If the account number begins with a “2” the account number should be 7 characters long
-//        > If the account number begins with a “5” the account number should be 10 characters long
-////        —> If the account number does not begin with a 2 or a 5 OR the account number lengths do not meet the expected results print
-////        “ Invalid account number”
+
 package IfElseStatement;
 
 import java.util.Scanner;
 
 public class AcctNumber {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter your account number");
-        String num = input.nextLine();
-        String firstNumber = num.substring(0, 1);
+        Scanner s = new Scanner(System.in);
+        String acctN = s.nextLine();
+        String firstNum = acctN.substring(0, 1);
 
         boolean check = true;
 
-        if (firstNumber.equals("5") || firstNumber.equals("2")) {
+        if (firstNum.equals("2") || firstNum.equals("5")) {
             check = true;
-        }else {
-            System.out.println("Invalid account number");
+        } else {
+            System.out.println("invalid");
         }
-
-
-        if (firstNumber.equals("5")) {
-            if (num.length() == 10) {
-                System.out.println("Valid 5 account");
+        if (firstNum.startsWith("2")) {
+            if (acctN.length() >= 7) {
+                System.out.println("valid 2");
             } else {
-                System.out.println("Invalid 5 account");
+                System.out.println("invalid 2");
+
             }
         }
-
-        if (firstNumber.equals("2")) {
-            if (num.length() == 7) {
-                System.out.println("Valid 2 account");
+        if (firstNum.startsWith("5")) {
+            if (acctN.length() >= 10) {
+                System.out.println("valid 5");
             } else {
-                System.out.println("Invalid 2 account");
+                System.out.println("invalid 5");
+
             }
         }
-
 
     }
 
 }
+//        Scanner //User is asked to enter an account number. You will check if these account numbers are valid.(
+////        > If the account number begins with a “2” the account number should be 7 characters long
+////        > If the account number begins with a “5” the account number should be 10 characters long
+//////        —> If the account number does not begin with a 2 or a 5 OR the account number lengths do not meet the expected results print
+//////        “ Invalid account number”input = new Scanner(System.in);
+//        System.out.println("Enter your account number");
+//        String num = input.nextLine();
+//        String firstNumber = num.substring(0, 1);
 
 
 
